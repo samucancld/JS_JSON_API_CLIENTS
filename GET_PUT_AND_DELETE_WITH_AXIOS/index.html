@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Http</title>
+    <link rel="stylesheet" href="assets/styles/app.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+    <script src="assets/scripts/app.js" defer></script>
+  </head>
+  <body>
+    <template id="tmp-id">
+      <li class="recipe-item">
+        <h2></h2>
+        <p></p>
+        <button>DELETE</button>
+      </li>
+    </template>
+    <section id="new-recipe">
+      <form>
+        <div class="form-control">
+          <label for="title">Title</label>
+          <input type="text" id="title" />
+          <label for="time-minutes">Time minutes</label>
+          <input type="text" id="time-minutes" />
+          <label for="price">Price</label>
+          <input type="text" id="price" />
+        </div>
+        <div class="form-control">
+          <label for="description">Description</label>
+          <textarea rows="3" id="description"></textarea>
+        </div>
+        <button type="submit">ADD</button>
+      </form>
+    </section>
+    <section id="available-recipes">
+      <button>FETCH recipes</button>
+      <ul class="recipes"></ul>
+    </section>
+  </body>
+</html>
